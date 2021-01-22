@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Thomaz santos">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="estilo.css" rel="stylesheet">
+    <title>Thomaz SPI - IMC</title>
+</head>
+
+<body>
+    <form class="bmi">
+        <div class="bmi-calculator">
+            <h1>Calcule seu IMC<h1>
+
+                    <div class="bmi-calculator-weight">
+                        <input id="sliderWeight" class="weight-slider" type="range" min="25" max="190" value="60" />
+                        <p> Peso:
+                            <input id="weightOutput" class="inputNumber" type="number" value="60" min="25" max="190"
+                                oninput="showValueWeight(this.value)" />
+                            <span>Kg<span>
+                        </p>
+                    </div>
+
+                    <div class="bmi-calculator-height">
+                        <input id="sliderHeight" class="height-slider" type="range" min="25" max="190" value="60" />
+                        <p> Altura:
+                            <input id="heightOutput" class="inputNumber" type="number" value="60" min="25" max="190"
+                                oninput="showValueHeight(this.value)" />
+                            <span>Cm<span>
+                        </p>
+                    </div>
+                    <input type="button" value="Calcular" class="button" id="btnCalcular">
+
+                    <div id="resultado">
+                        <p> --</p>
+                    </div>
+                    <hr>
+                    <footer>
+                        <h6>Thomaz Santos Dev &copy;</h6>
+                    </footer>
+        </div>
+
+        </form>
+
+</body>
+<script src="script.js"></script>
+
+</html>
